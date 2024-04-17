@@ -7,3 +7,16 @@
 h1{
 font-family: "Rubik Wet Paint", system-ui;
 }
+
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  boxsizing: border-box;
+}
+:root{
+  --accent-color: #34496e;
+  --bgcolor: #ecf0f1;
+  --mainfont: "Rubik Wet Paint", system-ui;
+  --sub-font: "arial", sans-serif;
+  --g-ratio: 1.618;
+}
