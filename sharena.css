@@ -17,6 +17,6 @@ h1{
   --accent-color: #34495;
   --bg-color: #ecf0f1;
   --main-font: "Jersey 10", sans-serif;
-  --sub-font: "Arial"
+  --sub-font: "Arial", sans-serif;
   --g-ratio: 1.618;
 }
