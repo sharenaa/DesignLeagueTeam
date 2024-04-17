@@ -1,4 +1,4 @@
-//LEader
+//Leader
 window.addEventListener('load', () => {
   const loader = document.querySelector('.loader');
   setTimeout(() => {
