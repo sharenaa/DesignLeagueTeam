@@ -7,3 +7,16 @@
 h1{
    font-family: "Jersey 10", sans-serif;
 }
+
+*. ::befor, ::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; 
+}
+:root{
+  --accent-color: #34495;
+  --bg-color: #ecf0f1;
+  --main-font: "Jersey 10", sans-serif;
+  --sub-font: "Arial"
+  --g-ratio: 1.618;
+}
