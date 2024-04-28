@@ -38,4 +38,32 @@ function Ninjas(name, age, height, color) {
     //audio
     coinSfx.play();
     
-  
+  const button = document.querySelector('btnCoin');
+
+    button.style.setProperty('background-color', '#2ecc71');
+    button.style.setProperty('border-color', '#2ecc71');
+    button.style.setProperty('color', 'var(--bg-color)');
+
+    //coin effect
+const coinImg = document.createElement('img');
+  coinImg.setAttribute('src', 'imgs/coin.png');
+  coinImg.setAttribute('id', 'coin.png');
+  coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height +  'px)';
+  container.appendChild(coinImg);
+
+  $('#coin-img').animate({ top: '60%', opacity: 1 }, 250);
+$('#coin-img').animate({ top: '70%', opacity: 0 }, 250, () => {
+$('#coin-img').remove();
+});
+button.style.setProperty( 'background-color', 'transparent');
+button.style.setProperty( 'border-color', 'var(--accent-color)');
+button.style.setProperty('color', 'var(--accent-color');
+  });
+};
+this.pipe = () => {
+  pipeSfx.play();
+}:
+this.powerUp = () => {
+  powerUpSfx.play();
+};
+}
