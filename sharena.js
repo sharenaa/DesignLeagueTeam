@@ -67,3 +67,29 @@ this.powerUp = () => {
   powerUpSfx.play();
 };
 }
+const promptUser = () => {
+  let name = prompt('Pick a name:') || 'Ninja';
+  let age;
+  let height;
+  let color;
+
+  this.getAge = () => {
+    age = prompt('Pick an age:') || '18';
+    age = parsInt(age);
+    if (isNaN(age)) {
+      this.getAge();
+    } else {
+      return;
+    }
+  };
+
+  this.getHeight = () => {
+    height = prompt('Pick height: 1, 2, 3, 4,') || 4;
+    height = parseInt(height);
+    if (height ===1 || height === 2 || height === 3 || height === 4) {
+      height = height * 64;
+      return; 
+    } elese {
+      this.getHeight();
+    }
+  };
