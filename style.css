@@ -7,6 +7,17 @@ body{
   color: #C4C4C4;
 }
 
+b{
+  text-transform: capitalize;
+  font-style: oblique;
+  text-shadow: 1px 1px #85FF90;
+}
+a{
+  text-transform: capitalize;
+  font-style: oblique;
+  text-shadow: 1px 1px #85FF90;
+}
+
 .banner{
   background-color: #006609;
   padding: 10px;
@@ -23,12 +34,22 @@ body{
 
 .slides {
 position: relative;
-  left: 10px;
+  Right: 10px;
   width: 45%;
 }
 .ourProject{
   border: 2px solid #000000;
-  background-color: #002f4d;
+  background-color: #006609;
+  position: absolute;
+  left: 1px;
+  margin: 2px;
+  padding: 2px;
+  height: 500px;
+  width: 49.5%
+}
+.img{
+    border: 2px solid #000000;
+  background-color: #006609;
   position: absolute;
   left: 1px;
   margin: 2px;
