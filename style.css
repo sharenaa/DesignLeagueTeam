@@ -4,6 +4,17 @@ html {
 }
 .slides {
 position: absolute;
-  left: 2px;
-  width: 50%;
+  left: 10px;
+  width: 45%;
 }
+.ourProject{
+  border: 1px solid #000000;
+  background-color: #002f4d;
+  position: absolute;
+  left: 1px;
+  margin: 2px;
+  padding: 2px;
+  height: 200px;
+  width: 49.5%
+}
+.ourInspiration
