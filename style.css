@@ -34,19 +34,27 @@ a{
 }
 
 .slides {
-position: relative;
-  Right: 10px;
-  width: 45%;
-}
-.ourProject{
   border: 2px solid #000000;
+  border-radius: 10px;
   background-color: #006609;
   position: absolute;
-  left: 1px;
+  right: 5px;
   margin: 2px;
   padding: 2px;
   height: 500px;
-  width: 49.5%
+  width: 45%
+
+}
+.ourProject{
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background-color: #006609;
+  position: absolute;
+  left: 5px;
+  margin: 2px;
+  padding: 2px;
+  height: 500px;
+  width: 45%
 }
 
 
