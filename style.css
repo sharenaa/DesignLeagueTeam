@@ -2,6 +2,18 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.banner{
+  border: 1px solid #000000;
+  background-color: #002f4d;
+  position: relative;
+  top: 5px;
+  left: 1px;
+  padding: 2px;
+  margin: 2px;
+  width: 99%  
+}
+
 .slides {
 position: absolute;
   left: 10px;
