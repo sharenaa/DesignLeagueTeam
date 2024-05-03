@@ -22,7 +22,7 @@ body{
 }
 
 .slides {
-position: absolute;
+position: relative;
   left: 10px;
   width: 45%;
 }
