@@ -12,11 +12,18 @@ b{
   font-style: oblique;
   text-shadow: 1px 1px #85FF90;
 }
+
 a{
   text-transform: capitalize;
   font-style: oblique;
   text-shadow: 1px 1px #85FF90;
   text-size: 1.2em;
+}
+
+img{
+  border: 2px solid;
+  border-color: #000000;
+  border-radius: 10px;
 }
 
 .banner{
@@ -55,7 +62,7 @@ a{
   left: 20px;
   margin: 2px;
   padding: 2px;
-  height: 1250px;
+  height: 1500px;
   width: 45%
 }
 
