@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>basic JavaScript</title>
+
+<style>
+
+h1{
+color: white;
+font-family: Arial;
+font-size: 40px;
+}
+
+p{
+color: #FFFFFF;
+font-family: Monospace, Lucida Console;
+font-size: 20px;
+background-color: lightblue;
+border: 2px solid;
+border-color: white;
+
+}
+
+button{
+background-color: grey;
+color: white;
+border: 2px dashed;
+border-color: black;
+border-radius: 5px;
+border-shadow: 5px 5px 5px;
+font-family: Monospace, Monaco;
+font-size: 15px;
+}
+
+#animate{
+background-color: #c71585;
+width: 50px;
+height: 50px;
+position: absolute;
+border-radius: 50px;
+}
+
+#container{
+background-color: #A7C7E7;
+width: 300px;
+height: 300px;
+position: relative;
+border: 2px dotted #000000;
+border-radius: 20px;
+}
+
+#box{
+border: 2px dashed #000000;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Output below</h1>
+<p id="demo">This will change with javascript</p>
+
+<button type="button" onclick="Reset()">
+Reset
+</button><br><br>
+
+<button type="button" onclick="ClickMe()">
+Add 10+5
+</button><br><br>
+
+<button type="button" onclick="ClickMe2()">
+Click Me Next!
+</button><br><br>
+
+<button type="button" onclick="ClickMe3()">
+Subtract 10-5
+</button><br><br>
+
+<button type="button" onclick="ClickMe4()">
+Multiply 10*5
+</button><br><br>
+
+<button type="button" onclick="ClickMe5()">
+Divide 10/5
+</button><br><br>
+
+<p>Hover & check out the changes!</p>
+<p id=coord></p>
+<br>
+
+<div id="box" style="background-color: #ccccff; width: 100px; height: 100px;" onmousemove="moveFunk(event)" onmouseout="clearCoor()></div>
+
+<div onmousemove="moveFunk(event)" onmouseout="clearCoor()"></div>
+
+<br><br>
+<p>Cause the box to move!</p>
+<button type="button" onclick="moveIt()">Animate</button>
+<button type="button" onclick="moveIt2()">Reverse</button>
+<br><br>
+<div id="container">
+
+<div id="animate"></div>
+
+
+</div>
+
+
+
+<script>
+
+function moveIt(){
+let id = null
+const elem = document.getElementById("animate")
+let pos = 0
+clearInterval(id)
+id = setInterval(frame,5)
+function frame(){
+if (pos == 250){
+clearInterval(id)
+}
+else{
+pos++
+elem.style.top = pos+"px"
+elem.style.left = pos+"px"
+}
+}
+}
+
+function moveIt2(){
+let id = null
+const elem = document.getElementById("animate")
+let pos = 250
+clearInterval(id)
+id = setInterval(frame,5)
+function frame(){
+if (pos == 0){
+clearInterval(id)
+}
+else{
+pos--
+elem.style.top = pos+"px"
+elem.style.left = pos+"px"
+}
+}
+}
+
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor = "Coordinates: ("+x+","+y+")"
+document.getElementById("coord").innerHTML = coor
+}
+
+function clearCoor(){
+document.getElementById("coord").innerHTML = " "
+}
+
+function ClickMe(){
+document.getElementById("demo").innerHTML = 10+5
+}
+
+function ClickMe2(){
+document.getElementById("demo").innerHTML = "Awesome, JavaScript can complete calculations!"
+}
+
+function ClickMe3(){
+document.getElementById("demo").innerHTML = 10-5
+}
+
+function ClickMe4(){
+document.getElementById("demo").innerHTML = 10*5
+}
+
+function ClickMe5(){
+document.getElementById("demo").innerHTML = 10/5
+}
+
+function Reset(){
+document.getElementById("demo").innerHTML = "This will change with JavaScript"
+}
+
+</script>
+
+</body>
+</html>
