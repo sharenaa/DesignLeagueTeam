@@ -14,11 +14,11 @@ font-family: "Rubik Wet Paint", system-ui;
   boxsizing: border-box;
 }
 :root{
-  --accent-color: #34496e;
-  --bgcolor: #ecf0f1;
-  --mainfont: "Rubik Wet Paint", system-ui;
-  --sub-font: "arial", sans-serif;
-  --g-ratio: 1.618;
+  accent-color: #34496e;
+  bgcolor: #ecf0f1;
+  mainfont: "Rubik Wet Paint", system-ui;
+  sub-font: "arial", sans-serif;
+  g-ratio: 1.618;
 }
 body{
   font-family: var(--sub-font);
