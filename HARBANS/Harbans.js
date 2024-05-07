@@ -1,14 +1,3 @@
-//Loader
-window.addEventListener('load', ()=> {
-        const loader = document.querySelector('loader');
-        setTimeout(() => {
-                loader.setAttribute('style', 'opacity: 0;');
-        }. 500);
-        setTimeout(() => {
-                loader.parentNode.removeChild(loader);
-                document.body.style.overflow = 'initial';
-        }, 100);
-});
 
 const coinSfx = new Sfx('sfx/Mario Coin.wav');
 const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
@@ -108,15 +97,15 @@ const promptUser = () => {
                 img = document.createElement('img');
                 let size = 'width:' + height + 'px;height:' + height + 'px;';
                 if (color === 'blue') {
-                        img.setAttribute('src', 'imgs.ninja1.png);
+                        img.setAttribute('src', 'imgs/ninja1.png);
                         img.setAttribute('style', size);
                         container.appendChild(img);
                 } else if (color === 'green') {
-                        img.setAttribute('src', 'imgs.ninja2.png);
+                        img.setAttribute('src', 'img/ninja2.png);
                         img.setAttribute('style', size);
                         container.appendChild(img);
                 } else if (color === 'red') {
-                        img.setAttribute('src', 'imgs.ninja3.png);
+                        img.setAttribute('src', 'img/ninja3.png);
                         img.setAttribute('style', size);
                         container.appendChild(img);
                 }
