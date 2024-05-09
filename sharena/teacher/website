@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width">
+    <title>Lab 3 Styling a Webpage</title>
+    <!--my favicon with link relation and specified file type image/png, hyper ref-->
+    <link rel="icon" type="image/png" href="myfavicon.png">
+    <!--here is the link to the CSS file with style-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+ <style>
+   h2{
+         <!--lavender hex code for heading background/text color-->
+     background-color: #E6E6FA;
+      color: lavender;
+      font-family: Helvetica;
+      }
+   </style>
+  </head>
+      <body>
+         <!--style for heading one background color-->
+  <h1 style="background-color:silver;">Thomas A. Edison CTE HS</h1>
+  <h2>Web Development</h2>
+  <h3>Lab 3: Styling a Webpage</h3>
+  <h4>By Sharena Sharif</h4>
+  <h5>10/16/2023</h5>
+  <hr>
+        <p>An example of a language utilized in style sheets is CSS, which is used to describe the writing style of a document. Cascading style sheet is known as CSS. A lot of things need to be edited in order to develop CSS code.</p>
 
+      </body>
+</html>
