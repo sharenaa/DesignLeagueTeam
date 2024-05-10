@@ -1,10 +1,11 @@
 body{
-  
+  background-color: #FFA864;
 }
 
 #banner{
-  background-color: ;
-  border: 2px
+  background-color: #E06D14;
+  border: 2px 
+  
 }
 
 #right{
