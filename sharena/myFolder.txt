@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript Basic</title>
+<style>
 
+button{
+background-color:grey;
+color: white;
+border: 2px dashed;
+border-color: black;
+border-radius: 5px;
+border-shadow: 5px 5px 5px;
+}
+
+#animate{
+background-color:#FFD1DC;
+width:50px;
+height:50px;
+position: absolute;
+}
+#container{
+background-color:#d8778f;
+width: 300px;
+height:300px;
+position: relative;
+}
+
+div{
+background-color:#ccccff;
+ width: 100px;
+ height:100px;
+}
+</style>
+</head>
+<body>
+<h1>JavaScript Output Below</h1>
+<p id="demo"> This will change with Javascript</p>
+<button type="button" onclick="addition()">Add 10+5</button>
+<button type="button" onclick="subtract()">Subtract 10-5</button>
+<button type="button" onclick="multiply()">Multiply 10x5</button>
+<button type="button" onclick="division()">Divide 10^5</button>
+<button type="button" onclick="greet()">Greet</button>
+<div onmousemove="moveFunk(event)" onmouseout="clearCoor()"></div>
+
+<button type="button" onclick="moveIt()">moveIt</button> <br>
+<button type="button" onclick="moveIt2()">Reverse</button> <br>
+<div id="container">
+<div id="animate"></div>
+
+</div>
+
+<script>
+
+function moveIt(){
+let id=null
+const elem = document.getElementById("animate");
+let pos=0
+clearInterval(id)
+id=setInterval(frame,5)
+function frame(){
+if (pos == 250){
+clearInterval(id)
+}
+else{
+pos++
+elem.style.top = pos+"px"
+elem.style.left = pos+"px"
+ }
+}
+}
+
+function moveIt2(){
+let id=null
+const elem = document.getElementById("animate");
+let pos=250
+clearInterval(id)
+id=setInterval(frame,5)
+function frame(){
+if (pos == 0){
+clearInterval(id)
+}
+else{
+pos--
+elem.style.top = pos+"px"
+elem.style.left = pos+"px"
+ }
+}
+}
+function addition(){
+document.getElementById("demo").innerHTML=10+5
+}
+function subtract(){
+document.getElementById("demo").innerHTML=10-5
+}
+function multiply(){
+document.getElementById("demo").innerHTML=10*5
+}
+function division(){
+document.getElementById("demo").innerHTML=10/5
+}
+function greet(){
+document.getElementById("demo").innerHTML="Hello World!"
+}
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor = "Coordinates: (" +x+ " ," +y+ ")"
+document.getElementById("demo").innerHTML= coor
+}
+function clearCoor(){
+document.getElementById("demo").innerHTML="   "
+}
+</script>
+
+</body>
+</html>
